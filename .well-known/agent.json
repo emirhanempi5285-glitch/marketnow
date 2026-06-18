@@ -1,0 +1,10 @@
+{
+  "name": "MarketNow Skill Marketplace",
+  "description": "The largest open MCP skill marketplace. Search, discover and install 13,000+ MCP-compatible skills for autonomous agents.",
+  "version": "1.0.0",
+  "mcp_endpoint": "https://www.marketnow.site/mcp",
+  "capabilities": ["search_skills", "get_skill_details", "list_categories", "purchase_skill"],
+  "pricing": "per-skill",
+  "auth": "none_required_for_search",
+  "contact": "https://www.marketnow.site"
+}

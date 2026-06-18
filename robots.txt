@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /api/
+Allow: /mcp
+
+User-agent: ModelContextProtocol
+Allow: /
+Crawl-delay: 1
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /api/
+
+Sitemap: https://www.marketnow.site/sitemap.xml
+
+# MCP server endpoint para agentes
+X-MCP-Endpoint: https://www.marketnow.site/mcp
