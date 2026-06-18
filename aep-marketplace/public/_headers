@@ -1,0 +1,13 @@
+/api/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, POST, OPTIONS
+  Access-Control-Allow-Headers: Content-Type, Authorization
+  X-Robots-Tag: index, follow
+
+/mcp
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, POST, OPTIONS
+  Access-Control-Allow-Headers: Content-Type, MCP-Protocol-Version, Mcp-Session-Id
+
+/*
+  X-Robots-Tag: index, follow

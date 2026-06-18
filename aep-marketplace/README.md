@@ -1,16 +1,36 @@
-# React + Vite
+# MarketNow — Agent Skill Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The largest open MCP skill marketplace. 13,000+ verified MCP-compatible skills.
 
-Currently, two official plugins are available:
+## MCP Server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Add to your `~/.claude/settings.json` or `claude_desktop_config.json`:
 
-## React Compiler
+```json
+{
+  "mcpServers": {
+    "marketnow": {
+      "type": "http",
+      "url": "https://www.marketnow.site/mcp"
+    }
+  }
+}
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Available Tools
 
-## Expanding the ESLint configuration
+| Tool | Description |
+|------|-------------|
+| `search_skills` | Search 13,000+ skills by keyword or category |
+| `get_skill_details` | Full docs, MCP config, benchmarks for any skill |
+| `list_categories` | Browse all skill categories with counts |
+| `get_marketplace_stats` | Marketplace-wide metrics |
+| `purchase_skill` | Get payment link and MCP config for a skill |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Quick Test
+
+```bash
+curl -X POST https://www.marketnow.site/mcp \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
+```

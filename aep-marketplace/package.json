@@ -7,9 +7,13 @@
     "generate": "node generate_skills.cjs",
     "prebuild": "node generate_skills.cjs",
     "dev": "node generate_skills.cjs && vite",
+    "dev:mcp": "cd mcp-server && node --watch index.js",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:mcp\"",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "mcp:install": "cd mcp-server && npm install",
+    "mcp:start": "cd mcp-server && npm start"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
@@ -29,6 +33,7 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
+    "concurrently": "^9.0.1",
     "eslint": "^10.3.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
