@@ -1,7 +1,7 @@
 {
   "rewrites": [
-    { "source": "/mcp", "destination": "https://marketnow-mcp.railway.app/mcp" },
-    { "source": "/api/(.*)", "destination": "https://marketnow-mcp.railway.app/api/$1" }
+    { "source": "/mcp", "destination": "/api/index" },
+    { "source": "/api/(.*)", "destination": "/api/index" }
   ],
   "headers": [
     {
