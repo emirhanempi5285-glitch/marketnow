@@ -6,7 +6,7 @@
 
 ## Configuraciones n8n
 - **URL**: http://localhost:5678
-- **Usuario**: edgar.flores.guerra.2011@gmail.com
+- **Usuario**: support@alicelabs.site
 - **Contraseña**: Opencl@w2026
 - **Configuración**: N8N_SECURE_COOKIE=false para autenticación HTTP
 
