@@ -18,7 +18,7 @@
 4. **Programas Desktop**: 10-15 en análisis
 
 ## Infraestructura
-- **n8n**: localhost:5678 (user: edgar.flores.guerra.2011@gmail.com)
+- **n8n**: localhost:5678 (user: support@alicelabs.site)
 - **GitHub**: eddyflores100-lang
 - **Almacenamiento**: D:\ trabajo activo, C:\ cache, E:\ archivo
 

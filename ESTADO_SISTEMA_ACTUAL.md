@@ -38,7 +38,7 @@
 3. **WhatsApp Server**: Configurado pero no corriendo
 
 ### Credenciales Verificadas:
-- **n8n User**: edgar.flores.guerra.2011@gmail.com
+- **n8n User**: support@alicelabs.site
 - **n8n Pass**: Opencl@w2026
 - **GitHub Token**: `[REMOVED_FOR_GITHUB_PUSH]` (seguro para push)
 - **Vercel Token**: Disponible en TOOLS.md
